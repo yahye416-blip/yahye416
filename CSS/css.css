@@ -1,0 +1,34 @@
+body        {
+
+    background-color: rgb(19, 218, 62);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif
+}                     
+h1          {
+    color: blue;
+}
+p           {
+    color: red;
+    font-size: 80px;
+    font-weight: 800;
+}          
+ol          {
+    text-align: left;
+    color: rgb(226, 238, 87);
+    font-size: 40px;
+    font-weight: bold;
+}     
+ th, td   {
+    border: 4px solid black;
+    border-radius: 10px;
+    color: rgb(24, 47, 221);
+    font-size: 30px;
+    font-weight: bold;
+    width: 33%;
+    text-align: center;
+}          
+table       {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}     
