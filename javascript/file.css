@@ -1,0 +1,15 @@
+div {
+    background-color: lime;
+}
+span {
+    background-color: yellow;
+}
+button  {
+    font-weight: bold;
+    font-size: 25px;
+    border: 2px;
+    border-radius: 25%;
+}
+img {
+    display: none;
+}
