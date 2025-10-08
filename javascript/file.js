@@ -10,7 +10,3 @@ function   showfunction() {
 function   divfunction() { 
     document.getElementById("myDIV").style.display = "inline";
 }
-// let fname = "Yahye";
-//  let lname = "Hashi";
-// let fullname = fname + lname;
-// console.log(fullname);
