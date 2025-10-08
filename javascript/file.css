@@ -13,3 +13,14 @@ button  {
 img {
     display: none;
 }
+#trial {
+    color: rgb(210, 22, 207);
+    background-color: rgb(181, 184, 11);
+    font-size: 30px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 30%; 
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;      
+}

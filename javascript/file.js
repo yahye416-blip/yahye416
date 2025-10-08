@@ -10,3 +10,7 @@ function   showfunction() {
 function   divfunction() { 
     document.getElementById("myDIV").style.display = "inline";
 }
+function   trialFunction() {
+    var fname = "yahye";
+    document.getElementById("trial").innerHTML = "asc"+" "+ fname;
+}
