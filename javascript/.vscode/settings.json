@@ -1,0 +1,11 @@
+{
+    "code-runner.customCommand": "",
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.languageIdToFileExtensionMap": {
+        
+        "bat": ".bat",
+        "powershell": ".ps1",
+        "typescript": ".ts"
+    }
+}
