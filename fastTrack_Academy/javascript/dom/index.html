@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<h1>hello by hand</h1>
+<h1 id ="myh1">hjbbhnm</h1>
+<div id="cont"></div>
+<script>    
+let myh1 = document.getElementById("myh1");
+myh1.textContent = " hello by js";
+myh1.style.color= "green";
+myh1.style.textDecorationLine = "underline";
+const allH1s = document.querySelectorAll("h1");
+allH1s[0].style.color= "blue";
+//this makes the first h1 blue
+allH1s[1].style.backgroundColor="yellow";
+// this makes the bg pf the 2nd h1 yellow
+for (let i=0; i<=10; i++){
+    let newDiv = document.createElement ("div");
+    newDiv.textContent = "this is div number " + i;
+    newDiv.style.backgroundColor = i%2==0 ? "lightgray" : "lightblue";
+    document.getElementById ("cont").appendChild (newDiv);
+}
+// in Vs code ctrl + P is a shortcut to find a file by name   
+// ctrl + P + @ to find a part of code 
+// ctrl + arrow key to move up or down
+// ctrl + shift + L to edit all matches of a word
+// ctrl + D to edit some but not all words that match
+// to view/change all shortcuts ctrl +shift + P
+//Then type in "keyboard" then click " open keyboard shortcuts"
+</script>
+
+
+
+
+</body>
+</html>

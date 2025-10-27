@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #demo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #146f0f;
+            font-size: 50px;
+        }
+        #output p {
+          font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #146f0f;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo"></h1> 
+    <div id="output"></div>
+    <script>
+let week = 10;
+
+let weight = 15;
+let text = " ez bar " + (week+5) + " r  " + weight +" kg ";
+
+if (3 <= week > 1) {
+  text = " ez bar " + (week+5) + " r  " + weight +" kg ";
+}
+if (week>= 4) {
+ text = " ez bar " + (week+2) + " r  " + ( weight + 2.5) +" kg ";
+}
+if (week>=7) {
+ text = " ez bar " + (week-1) + " r  " + ( weight + 5) +" kg ";
+}
+if (week>=10) {
+ text = " ez bar " + (week-4) + " r  " + ( weight + 7.5) +" kg ";
+}
+if (week>=13) {
+ text = " ez bar " + (week-7) + " r  " + ( weight + 10) +" kg ";
+}
+if (week>=16) {
+ text = " ez bar " + (week-10) + " r  " + ( weight + 12.5) +" kg ";
+}
+
+
+document.getElementById("demo").innerHTML = text;
+
+const outputDiv = document.getElementById("output");
+for (let i = 1; i <3; i++) {
+    const para = document.createElement("p");
+    para.textContent = text  ;
+    outputDiv.appendChild(para);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+.outputbox {
+    background: linear-gradient(135deg, #33c91c, #00ff48);
+    color: rgb(255, 0, 0);
+    border: none;
+    padding: 30px 60px;
+    font-size: 40px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 122, 255, 0.3);
+  }
+
+  .outputbox:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 122, 255, 0.5);
+  }
+
+  .outputbox:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 10px rgba(0, 122, 255, 0.4);
+   
+  }
+
+  .btn {
+    background: linear-gradient(135deg, #33c91c, #00ff48);
+    color: rgb(255, 0, 0);
+    border: none;
+    padding: 30px 60px;
+    font-size: 40px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 122, 255, 0.3);
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 122, 255, 0.5);
+  }
+
+  .btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 10px rgba(0, 122, 255, 0.4);
+   
+  }
+  #output {
+  display:none;
+  }
+</style>
+</head>
+<body>
+
+<button id="hidey" class="btn" onclick="wcsfunction()" onmouseover="makeBgYellow()" onmouseout="makeBgBlue()">Islamic Greeting</button>
+<div id="output" class="outputbox" onmouseover="makeBgYellow()" onmouseout="makeBgBlue()" >Asalaamu Aleylkum</div>
+
+<script>
+function  wcsfunction(){
+document.getElementById("output").style.display="block";
+document.getElementById("hidey").style.display="none";
+document.body.style.background="#0000FF";
+
+}
+function  makeBgYellow(){
+document.body.style.background="#FFFF00";
+}
+function  makeBgBlue(){
+document.body.style.background="#0000FF";
+}
+</script>
+</body>
+</html>
