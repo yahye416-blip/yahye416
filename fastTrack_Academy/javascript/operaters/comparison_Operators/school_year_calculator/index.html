@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UK School Year Finder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #a2d2ff, #bde0fe);
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #023047;
+    }
+
+    .card {
+      background-color: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 320px;
+      margin: 0 auto;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 80%;
+      border: 2px solid #219ebc;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #219ebc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #126782;
+    }
+
+    #result {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #023047;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎓 UK School Year Finder</h1>
+  <div class="card">
+    <p>Enter your age to find out your school year in the UK:</p>
+    <input type="number" id="age" placeholder="Enter your age">
+    <br>
+    <button onclick="findYear()">Check Year</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function findYear() {
+      let age = parseInt(document.getElementById("age").value);
+      let result = "";
+
+      if (isNaN(age) || age < 3 || age > 19) {
+        result = "Please enter an age between 3 and 19.";
+      } 
+      else if (age >= 3 && age <= 4) {
+        result = "You are in Nursery or Reception (Early Years).";
+      } 
+      else if (age >= 5 && age <= 10) {
+        result = "You are in Primary School (Year 1–6).";
+      } 
+      else if (age >= 11 && age <= 16) {
+        result = "You are in Secondary School (Year 7–11).";
+      } 
+      else if (age >= 17 && age <= 18) {
+        result = "You are in Sixth Form or College (Year 12–13).";
+      } 
+      else if (age >= 19) {
+        result = "You may be in Higher Education (University or beyond).";
+      }
+
+      // Logical operator examples
+      if (age >= 11 && age <= 16) {
+        result += " ✅ You must take GCSEs because (age >= 11 && age <= 16).";
+      } else if (age < 11 || age > 16) {
+        result += " 🧠 You are not in GCSE years because (age < 11 || age > 16).";
+      }
+
+      document.getElementById("result").innerHTML = result;
+    }
+  </script>
+
+</body>
+</html>
