@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>onchange Example</title>
+</head>
+<body>
+<h2>Simple Form with onchange</h2>
+<form> <label for="username">Enter your name:</label><br>
+<input type="text" id="username" onchange="showName()"> </form>
+<p id="output"></p> 
+<script> function showName() { const name = document.getElementById("username").value; document.getElementById("output").textContent = "Hello, " + name + "!"; } </script> 
+</body> 
+</html>

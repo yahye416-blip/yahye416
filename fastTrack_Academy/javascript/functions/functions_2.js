@@ -10,4 +10,5 @@ return num1 + num2;
 function subtract(num1, num2){
 return num1 - num2;
 }
-console.log(subtract(3 ,25));
+console.log(subtract(3 ,5));
+console.log(multiply(3,  5));
