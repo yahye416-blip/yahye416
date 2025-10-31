@@ -37,16 +37,4 @@
 // Arrow Functions in Callbacks
 
 
-// let student = ["yahye", "mohamed", "deeqa", "faadumo"];
-// let capped = student.map(name => name.toUpperCase());
-// console.log(capped);
-//map but with strings
-
-
-let students = ["yahye", "mohamed", "deeqa", "faadumo"];
-let capitalized = students.map(name => 
-  name.charAt(0).toUpperCase() + name.slice(1)
-);
-console.log(capitalized);
-//only capitalizes the first letter
 
