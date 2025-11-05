@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind CDN Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-8"></body>
+  <h1 class="text-4xl font-bold text-blue-600">Hello Tailwind CSS!</h1>
+  <div class="flex justify-between items-center bg-blue-100 p-4 rounded">
+  <div class="text-blue-700 font-bold">Logo</div>
+  <div class="flex gap-4">
+    <a href="#" class="text-blue-700 hover:underline">Home</a>
+    <a href="#" class="text-blue-700 hover:underline">About</a>
+    <a href="#" class="text-blue-700 hover:underline">Contact</a>
+  </div>
+</div>
+<div class="grid grid-cols-3 gap-4 mt-6">
+  <div class="bg-red-200 p-4 text-blue-800 text-center rounded">1</div>
+  <div class="bg-green-200 p-4 text-blue-800 text-center rounded">2</div>
+  <div class="bg-blue-200 p-4 text-blue-800 text-center rounded">3</div>
+</div>
+<div class="p-4 bg-yellow-100 text-center text-blue-800 text-lg md:text-2xl lg:text-4xl m-5">
+  Resize the browser to see font size change
+</div>
+<div class="grid grid-cols-1 text-blue-800 md:grid-cols-3 gap-4 mt-6">
+  <div class="bg-pink-200 p-4 rounded">Box 1</div>
+  <div class="bg-pink-300 p-4 rounded">Box 2</div>
+  <div class="bg-pink-400 p-4 rounded">Box 3</div>
+</div>
+<button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-900 focus:ring-2 focus:ring-blue-300 active:bg-blue-700 m-4">
+  Hover Me
+</button>
+  <h1 class="text-3xl font-bold">Dark Mode Example</h1>
+  <div class="bg-[#1da1f2] text-white p-[20px] rounded-[12px] m-3">
+  Twitter Blue Box
+</div>
+<button class="bg-green-500 text-white px-4 py-2 rounded transition-all duration-300 hover:bg-green-700 hover:scale-110">
+  Smooth Hover
+</button>
+<div class="animate-bounce bg-red-500 text-white p-4 rounded-3xl w-32 text-center m-7">
+  Bounce!
+</div>
+<div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden m-5">
+  <img src="pic.png" class="w-full" />
+  <div class="p-4">
+    <h3 class="text-lg font-semibold">Tailwind Card</h3>
+    <p class="text-gray-600 mt-2">Reusable component example.</p>
+    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Read More</button>
+  </div>
+</div>
+<style type="text/tailwindcss">
+  @layer components {
+    .btn-blue {
+      @apply bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600;
+    }
+  }
+</style>
+
+<button class="btn-blue">Custom Button</button>
+
+</body>
+</html>
