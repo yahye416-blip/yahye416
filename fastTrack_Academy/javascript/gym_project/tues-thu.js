@@ -44,22 +44,18 @@ function getWorkoutPlanC(week, baseWeight = 15) {
 function printWorkout(exercise, { reps, load }) {
   console.log(exercise);
   for (let i = 1; i <= 3; i++) {
-    console.log(`${i}. ${exercise} ${reps} r ${load} kg`);
+    console.log(` ${exercise} ${reps} r ${load} kg`);
   }
 }
 
 // 🏋️ MASTER WORKOUT RUNNER
 function runWorkout(week) {
-  console.log(`\n=== WORKOUT PLAN (Week ${week}) ===\n`);
+console.log("");
+console.log(`Tues/Thu (Week ${week}) `);
+console.log("");
 
   // --- PLAN A: Upper Body ---
-  console.log("🔥 PLAN A: Upper Body\n");
   const exercisesA = [
-    { name: "fore arm ez bar", base: 15 },
-    { name: "preacher curl", base: 27 },
-    { name: "upperbackrow", base: 41 },
-    { name: "onehanded pulldown", base: 45 },
-    { name: "dumbell sidelateralraises", base: 10 },
     { name: "ropecore pull", base: 32 },
     { name: "tricep overhead", base: 21 },
     { name: "tri rope pull", base: 10 },
@@ -78,10 +74,8 @@ function runWorkout(week) {
   });
 
   // --- PLAN B: Core + Chest ---
-  console.log("💪 PLAN B: Core + Chest\n");
   const exercisesB = [
     { name: "weighted kneeraises", base: 6 },
-    { name: "lat pulldow", base: 52 },
     { name: "chest press", base: 45 },
     { name: "chest fly", base: 59 },
   ];
@@ -93,22 +87,6 @@ function runWorkout(week) {
   });
 
   console.log(`1 min high intensity sp 11 after every 4 min ${(week * 2)} times\n`);
-
-  // --- PLAN C: Pull + Isolation ---
-  console.log("⚡ PLAN C: Pull + Isolation\n");
-  const exercisesC = [
-    { name: "ez bar", base: 15 },
-    { name: "shrugs", base: 50 },
-    { name: "seated rows", base: 36 },
-    { name: "rope hammer curl", base: 17 },
-    { name: "wire sidelats", base: 3.4 },
-  ];
-
-  exercisesC.forEach(({ name, base }) => {
-    const plan = getWorkoutPlanC(week, base);
-    printWorkout(name, plan);
-    console.log("");
-  });
 }
 
 // ✅ Just change this number each week:

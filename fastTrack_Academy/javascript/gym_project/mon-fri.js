@@ -44,31 +44,24 @@ function getWorkoutPlanC(week, baseWeight = 15) {
 function printWorkout(exercise, { reps, load }) {
   console.log(exercise);
   for (let i = 1; i <= 3; i++) {
-    console.log(`${i}. ${exercise} ${reps} r ${load} kg`);
+    console.log(`${exercise} ${reps} r ${load} kg`);
   }
 }
 
 // 🏋️ MASTER WORKOUT RUNNER
 function runWorkout(week) {
-  console.log(`\n=== WORKOUT PLAN (Week ${week}) ===\n`);
+console.log("");
+console.log(` Mon/Fri (Week ${week}) `);
+console.log("");
 
   // --- PLAN A: Upper Body ---
-  console.log("🔥 PLAN A: Upper Body\n");
+  console.log("");
   const exercisesA = [
     { name: "fore arm ez bar", base: 15 },
     { name: "preacher curl", base: 27 },
     { name: "upperbackrow", base: 41 },
     { name: "onehanded pulldown", base: 45 },
     { name: "dumbell sidelateralraises", base: 10 },
-    { name: "ropecore pull", base: 32 },
-    { name: "tricep overhead", base: 21 },
-    { name: "tri rope pull", base: 10 },
-    { name: "dips", base: 14 },
-    { name: "dips machine", base: 50 },
-    { name: "incline CH press", base: 20 },
-    { name: "bench SH press", base: 14 },
-    { name: "incline machine", base: 50 },
-    { name: "shoulder press", base: 36 },
   ];
 
   exercisesA.forEach(({ name, base }) => {
@@ -78,12 +71,9 @@ function runWorkout(week) {
   });
 
   // --- PLAN B: Core + Chest ---
-  console.log("💪 PLAN B: Core + Chest\n");
+  console.log("");
   const exercisesB = [
-    { name: "weighted kneeraises", base: 6 },
-    { name: "lat pulldow", base: 52 },
-    { name: "chest press", base: 45 },
-    { name: "chest fly", base: 59 },
+    { name: "lat pulldown", base: 52 },
   ];
 
   exercisesB.forEach(({ name, base }) => {
@@ -92,10 +82,8 @@ function runWorkout(week) {
     console.log("");
   });
 
-  console.log(`1 min high intensity sp 11 after every 4 min ${(week * 2)} times\n`);
-
   // --- PLAN C: Pull + Isolation ---
-  console.log("⚡ PLAN C: Pull + Isolation\n");
+  console.log("");
   const exercisesC = [
     { name: "ez bar", base: 15 },
     { name: "shrugs", base: 50 },
@@ -109,6 +97,7 @@ function runWorkout(week) {
     printWorkout(name, plan);
     console.log("");
   });
+    console.log(`1 min high intensity sp 11 after every 4 min ${(week * 2)} times\n`);
 }
 
 // ✅ Just change this number each week:
