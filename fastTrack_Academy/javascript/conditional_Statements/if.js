@@ -8,7 +8,7 @@
 // }
 
 let ageOfBoy = 10;
-const CINEMA_AGE = 15; 
-if ( ageOfBoy < CINEMA_AGE ){
+const Cinema_Age = 15; 
+if ( ageOfBoy < Cinema_Age ){
   console.log("Sorry you cannot enter the cinema, you are underage.")
 }
