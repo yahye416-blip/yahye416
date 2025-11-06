@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projects.html</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
  <style> 
         img {
@@ -16,43 +17,33 @@
             font-size: 30px;
             font-family: Calibri, 'Trebuchet MS', sans-serif;
          }
-          table {
-            width: 100%;
-            padding: 10px 10px 10px 10px;
-            margin-top: -6em;  
-            text-align: center;
-            font-family: Calibri, 'Trebuchet MS', sans-serif;
-            position: relative;top: 0;
-        }
-   
-   th, td {
-            border: 6px solid rgb(7, 239, 11);
-            border-radius: 35px;
-            padding: 10px 10px 10px 10px;
-            margin: 10px 10px 10px 10px;
-            text-align: centre;
-            background-color: rgb(7, 239, 11);
-            text-decoration-color: azure;
-            font-size: 30px;
-            font-family: Calibri, 'Trebuchet MS', sans-serif;
-        }
     body {
         background-color: rgba(31, 209, 212, 0.734);
     }
    </style>
-<table> 
-<tr>
-    <th><a href="homepage.html"target="_blank">&nbsp;Homepage&nbsp;</a></th><br>
-    <th><a href="about.html"target="_blank">&nbsp;About&nbsp;</a></th><br>
-    <th><a href="contact.html"target="_blank">&nbsp;Contact me&nbsp;</a></th><br>
-    <th><a href="projects.html"target="_blank">&nbsp;My Projects&nbsp;</a></th><br>
-    <th><a href="videos.html"target="_blank">&nbsp;Video&nbsp;</a></th><br>
-</tr>
-</table>
+<div id=nav class="flex flex-wrap justify-between p-4 ">
+  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
+    <a href="homepage.html" target="_blank">Homepage</a>
+  </div>
+  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
+    <a href="about.html" target="_blank">About</a>
+  </div>
+  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
+    <a href="contact.html" target="_blank">Contact Me</a>
+  </div>
+  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
+    <a href="projects.html" target="_blank">My Projects</a>
+  </div>
+  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
+    <a href="videos.html" target="_blank">Videos</a>
+  </div>
+</div>
 <body>
 <hr>
-    <h1>Projects Page</h1>
-    <p>This is the projects page.</p> 
+    <h1></h1>
+    <div class="bg-gradient-to-r from-lime-600 to-green-500 w-fit text-6xl text-center text-white rounded-3xl m-3 p-3 mx-auto font-bold "><h1 class="text-purple-900">Projects Page</h1>
+</div>
+    <p class="text-5xl">This is the projects page.</p><br>
 <img src="projects_pic1.png" alt="projects_pic1" width="600" height="400">
 <img src="projects_pic2.png" alt="projects_pic2" width="600" height="400">
 <img src="projects_pic3.png" alt="projects_pic3" width="600" height="400">

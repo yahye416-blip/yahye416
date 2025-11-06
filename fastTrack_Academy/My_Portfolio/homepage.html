@@ -4,29 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homepage.html</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <style> 
-    table {
-            width: 100%;
-            padding: 10px 10px 10px 10px;
-            margin-top: -6em;  
-            text-align: center;
-            font-family: Calibri, 'Trebuchet MS', sans-serif;
-            position: relative;top: 0;
-        }
-   
-   th, td {
-            border: 6px solid rgb(7, 239, 11);
-            border-radius: 35px;
-            padding: 10px 10px 10px 10px;
-            margin: 10px 10px 10px 10px;
-            text-align: centre;
-            background-color: rgb(7, 239, 11);
-            text-decoration-color: azure;
-            font-size: 30px;
-            font-family: Calibri, 'Trebuchet MS', sans-serif;
-        }
     body {
         background-color: rgb(31, 209, 212);
     }
@@ -46,18 +27,26 @@
         color: rgb(0, 0, 0);
     }
    </style>
-<table> 
-<tr>
-    <th><a href="homepage.html"target="_blank">&nbsp;Homepage&nbsp;</a></th><br>
-    <th><a href="about.html"target="_blank">&nbsp;About&nbsp;</a></th><br>
-    <th><a href="contact.html"target="_blank">&nbsp;Contact me&nbsp;</a></th><br>
-    <th><a href="projects.html"target="_blank">&nbsp;My Projects&nbsp;</a></th><br>
-    <th><a href="videos.html"target="_blank">&nbsp;Video&nbsp;</a></th><br>
-</tr>
-</table>
+<div id=nav class="flex flex-wrap justify-between p-4 ">
+  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
+    <a href="homepage.html" target="_blank">Homepage</a>
+  </div>
+  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
+    <a href="about.html" target="_blank">About</a>
+  </div>
+  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
+    <a href="contact.html" target="_blank">Contact Me</a>
+  </div>
+  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
+    <a href="projects.html" target="_blank">My Projects</a>
+  </div>
+  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
+    <a href="videos.html" target="_blank">Videos</a>
+  </div>
+</div>
 <h1>My name is Yahye Hashi</h1>
 <h2>Welcome to my portfolio</h2>
 <hr>
-<h3>I am 26 years old and have been learning HTML for a 1 month.</h3> 
+<h3>I am 26 years old and have been learning HTML,Css,Javascript and Tailwind these past 2 months.</h3> 
 </body>
 </html>
