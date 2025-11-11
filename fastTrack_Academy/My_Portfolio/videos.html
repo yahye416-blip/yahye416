@@ -6,7 +6,7 @@
     <title>videos.html</title>
      <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body> 
+<body class="bg-gray-900 text-gray-100">
     <style> 
    
     body {
@@ -17,53 +17,59 @@
         font-family: Calibri, 'Trebuchet MS', sans-serif;
         color: rgb(11, 151, 159);
     }
+    h2 {
+font-size: 65px;
+    
+    }
    </style>
-<div id=nav class="flex flex-wrap justify-between p-4 ">
-  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
-    <a href="homepage.html" target="_blank">Homepage</a>
-  </div>
-  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
-    <a href="about.html" target="_blank">About</a>
-  </div>
-  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
-    <a href="contact.html" target="_blank">Contact Me</a>
-  </div>
-  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
-    <a href="projects.html" target="_blank">My Projects</a>
-  </div>
-  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
-    <a href="videos.html" target="_blank">Videos</a>
-  </div>
-</div>
-    <div class="bg-gradient-to-r from-lime-700 to-green-600 w-fit text-6xl text-center text-blue rounded-3xl m-3 p-3 mx-auto font-bold "><h1 class="text-black">My Videos</h1>
-</div>
-    <hr>
+ <section class="max-w mx-auto px-6 py-16 grid grid-cols-5 gap-9">
+
+    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
+      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center "><a href="homepage.html" target="_blank">Homepage</a></h2>
+    </div>
+<div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
+      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="about.html" target="_blank">About</a></h2>
+    </div>
+    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
+      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="contact.html" target="_blank">Contact Me</a></h2>
+    </div>
+    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
+      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="projects.html" target="_blank">My Projects</a></h2>
+    </div>
+    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
+      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="videos.html" target="_blank">Videos</a></h2>
+    </div>
+</section>
+<div class="m-3 p-2">
+<h2 class="bg-gray-800 text-green-700 font-bold rounded-3xl p-6 hover:shadow-green-700/40 transition">My Videos</h2>
+    </div>
+    <br>
     <ol>    
-    <li>
+    <li class="m-4">
         <video width="640" height="500" controls autoplay>
             <source src="videos.html_vid1.mp4" type="video/mp4">
             <source src="videos.html_vid1.mov" type="video/mov">
         </video>
     </li>
-    <li>
+    <li class="m-4">
         <video width="640" height="500" controls autoplay>
             <source src="videos.html_vid2.mp4" type="video/mp4">
             <source src="videos.html_vid2.mov" type="video/mov">
         </video>
     </li>
-    <li>
+    <li class="m-4">
     <video width="640" height="500" controls autoplay>
             <source src="videos.html_vid3.mp4" type="video/mp4">
             <source src="videos.html_vid3.mov" type="video/mov">
         </video>
     </li>
-     <li>
+     <li class="m-4">
          <video width="640" height="500" controls autoplay>
             <source src="videos.html_vid4.mp4" type="video/mp4">
             <source src="videos.html_vid4.mov" type="video/mov">
         </video>
     </li>
-     <li>
+     <li class="m-4">
         <video width="640" height="500" controls autoplay>
             <source src="videos.html_vid5.mp4" type="video/mp4">
             <source src="videos.html_vid5.mov" type="video/mov">

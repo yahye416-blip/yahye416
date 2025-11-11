@@ -6,16 +6,16 @@
     <title>contact.html</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-900 text-gray-100">
     <style>
         legend {
-            color: rgb(25, 6, 149);  
+            color:  rgb(16, 180, 46);  
             font-size: 25px;
             font-family: Calibri, 'Trebuchet MS', sans-serif;
         }
         fieldset {
-            color: rgb(25, 6, 149);  
-            border: 5px solid rgb(25, 6, 149);  
+            color: rgb(16, 180, 46);  
+            border: 5px solid rgb(16, 180, 46);  
         }
         form {
             font-family: Calibri, 'Trebuchet MS', sans-serif;
@@ -30,48 +30,55 @@
             font-family: Calibri, 'Trebuchet MS', sans-serif;   
         }
     body {
-        background-color: rgba(127, 249, 113, 0.982);
+        background-color: rgb(16, 180, 46);
     }
     h2 {
             font-size: 50px;
             font-family: Calibri, 'Trebuchet MS', sans-serif;
-            color: rgb(25, 6, 149);    
+            color:  rgb(16, 180, 46);    
 
     }
+    
         </style>
-<div id=nav class="flex flex-wrap justify-between p-4 ">
-  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
-    <a href="homepage.html" target="_blank">Homepage</a>
-  </div>
-  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
-    <a href="about.html" target="_blank">About</a>
-  </div>
-  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
-    <a href="contact.html" target="_blank">Contact Me</a>
-  </div>
-  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
-    <a href="projects.html" target="_blank">My Projects</a>
-  </div>
-  <div class="bg-lime-400 p-4 text-blue-800 text-4xl font-bold rounded-3xl w-full lg:w-[19%] transition-all duration-300 hover:underline hover:scale-110 text-center">
-    <a href="videos.html" target="_blank">Videos</a>
-  </div>
+
+
+
+
+ <div class="bg-gray-900 sticky top-0">
+  <section class="max-w mx-auto px-6 py-16 grid grid-cols-5 gap-9">
+
+    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
+      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center "><a href="homepage.html" target="_blank">Homepage</a></h2>
+    </div>
+<div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
+      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="about.html" target="_blank">About</a></h2>
+    </div>
+    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
+      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="contact.html" target="_blank">Contact Me</a></h2>
+    </div>
+    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
+      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="projects.html" target="_blank">My Projects</a></h2>
+    </div>
+    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
+      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="videos.html" target="_blank">Videos</a></h2>
+    </div>
+</section>
 </div>
-<hr>
 <div class="m-3 p-2">
-<h2>Contact me</h2>
+<h2 class="bg-gray-800 rounded-3xl shadow-lg p-6 hover:shadow-green-700/40 transition">Contact me</h2>
 <form action="/action_page.php" autocomplete="on">
-<fieldset class="m-3 p-2">
+<fieldset class="m-3 p-5">
 <legend><strong>Fill in the form below:</strong></legend>
   <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" placeholder="Enter First name" class="rounded-3xl"><br>
+  <input type="text" id="fname" name="fname" placeholder="Enter First name" class="rounded-3xl p-3"><br>
   <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" placeholder="Enter Last name" class="rounded-3xl"><br>
+  <input type="text" id="lname" name="lname" placeholder="Enter Last name" class="rounded-3xl p-3"><br>
  <label for="email">Email address:</label><br>
-  <input type="email" id="email" name="email" autocomplete="off"placeholder="Enter email" class="rounded-3xl"><br>
+  <input type="email" id="email" name="email" autocomplete="off"placeholder="Enter email" class="rounded-3xl p-3"><br>
   <label for="textarea" id="textarea">Send a message: </label><br>
   <textarea id="textarea" rows="6" cols="40" class="rounded-3xl"></textarea>
   <br>
-  <input type="submit" value="Submit" class="bg-green-500 text-white px-4 py-2 rounded transition-all duration-300 hover:bg-green-700 hover:scale-110">
+  <input type="submit" value="Submit" class="bg-green-500 text-white text-3xl px-4 py-2 rounded-full transition-all duration-300 hover:bg-green-700 hover:scale-110">
   </fieldset>
 </form>
 </div>
