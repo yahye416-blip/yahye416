@@ -1,61 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projects.html</title>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects | Yahye Hashi</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
- <style> 
-        img {
-           border: 5px solid
-        }
-        h1 {
-            font-size: 50px;                        
-         }
-         p {
-            font-size: 30px;
-            font-family: Calibri, 'Trebuchet MS', sans-serif;
-         }
-    body {
-        background-color: rgba(31, 209, 212, 0.734);
-    }
-   </style>
-<section class="max-w mx-auto px-6 py-16 grid grid-cols-5 gap-9">
+  </head>
 
-    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
-      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center "><a href="homepage.html" target="_blank">Homepage</a></h2>
-    </div>
-<div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
-      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="about.html" target="_blank">About</a></h2>
-    </div>
-    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
-      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="contact.html" target="_blank">Contact Me</a></h2>
-    </div>
-    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
-      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="projects.html" target="_blank">My Projects</a></h2>
-    </div>
-    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
-      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="videos.html" target="_blank">Videos</a></h2>
-    </div>
-</section>
-<div class=" hover:animate-pulse m-3">
-  <header class="bg-gradient-to-r from-green-900 to-gray-800 py-16 text-center rounded-3xl">
-    <h1 class="text-4xl font-bold mb-2">Projects Page</h1>
-  </header><br>
-<hr>
-   
-    <p class="text-5xl">This is the projects page.</p><br>
-<img src="projects_pic1.png" alt="projects_pic1" width="600" height="400">
-<img src="projects_pic2.png" alt="projects_pic2" width="600" height="400">
-<img src="projects_pic3.png" alt="projects_pic3" width="600" height="400">
-<img src="projects_pic4.png" alt="projects_pic4" width="600" height="400">
-<img src="projects_pic5.png" alt="projects_pic4" width="600" height="400">
-<img src="projects_pic6.png alt="projects_pic4" width="600" height="400">
-<img src="projects_pic7.png" alt="projects_pic4" width="600" height="400">
-<img src="projects_pic8.png" alt="projects_pic4" width="600" height="400">
-<img src="projects_pic9.png" alt="projects_pic4" width="600" height="400">
-<img src="projects_pic10.png" alt="projects_pic4" width="600" height="400">
-<img src="projects_pic10.png" alt="projects_pic4" width="600" height="400">
-</body>
+  <body class="bg-gray-950 text-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav
+      class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 sticky top-0 bg-gray-950/80 backdrop-blur-md z-50"
+    >
+      <a
+        href="homepage.html"
+        target="_blank"
+        class="bg-gray-800 rounded-full shadow-lg p-4 text-center text-lg font-semibold text-emerald-400 hover:bg-emerald-700 hover:text-white transition-all duration-300"
+      >
+        Homepage
+      </a>
+
+      <a
+        href="about.html"
+        target="_blank"
+        class="bg-gray-800 rounded-full shadow-lg p-4 text-center text-lg font-semibold text-emerald-400 hover:bg-emerald-700 hover:text-white transition-all duration-300"
+      >
+        About
+      </a>
+
+      <a
+        href="contact.html"
+        target="_blank"
+        class="bg-gray-800 rounded-full shadow-lg p-4 text-center text-lg font-semibold text-emerald-400 hover:bg-emerald-700 hover:text-white transition-all duration-300"
+      >
+        Contact
+      </a>
+
+      <a
+        href="projects.html"
+        target="_blank"
+        class="bg-emerald-700 rounded-full shadow-lg p-4 text-center text-lg font-semibold text-white hover:bg-emerald-600 transition-all duration-300"
+      >
+        Projects
+      </a>
+
+      <a
+        href="videos.html"
+        target="_blank"
+        class="bg-gray-800 rounded-full shadow-lg p-4 text-center text-lg font-semibold text-emerald-400 hover:bg-emerald-700 hover:text-white transition-all duration-300"
+      >
+        Videos
+      </a>
+    </nav>
+
+    <!-- Header -->
+    <header
+      class="max-w-4xl mx-auto bg-gradient-to-r from-emerald-900 to-gray-800 py-16 text-center rounded-3xl shadow-lg mt-8 hover:scale-[1.02] transition-transform"
+    >
+      <h1
+        class="text-5xl font-extrabold bg-gradient-to-r from-emerald-300 to-emerald-600 bg-clip-text text-transparent mb-3"
+      >
+        My Projects
+      </h1>
+      <p class="text-gray-300 text-lg">A showcase of my development journey</p>
+    </header>
+
+    <!-- Gallery -->
+    <section
+      class="max-w-6xl mx-auto px-6 py-16 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+    >
+      <!-- Project Card -->
+      <div
+        class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-emerald-500/30 transition duration-300"
+      >
+        <img
+          src="projects_pic1.png"
+          alt="Project 1"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-emerald-400">Project 1</h3>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-emerald-500/30 transition duration-300"
+      >
+        <img
+          src="projects_pic2.png"
+          alt="Project 2"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-emerald-400">Project 2</h3>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-emerald-500/30 transition duration-300"
+      >
+        <img
+          src="projects_pic3.png"
+          alt="Project 3"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-emerald-400">Project 3</h3>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-emerald-500/30 transition duration-300"
+      >
+        <img
+          src="projects_pic4.png"
+          alt="Project 4"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-emerald-400">Project 4</h3>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-emerald-500/30 transition duration-300"
+      >
+        <img
+          src="projects_pic5.png"
+          alt="Project 5"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-emerald-400">Project 5</h3>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-emerald-500/30 transition duration-300"
+      >
+        <img
+          src="projects_pic6.png"
+          alt="Project 6"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-emerald-400">Project 6</h3>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-emerald-500/30 transition duration-300"
+      >
+        <img
+          src="projects_pic7.png"
+          alt="Project 7"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-emerald-400">Project 7</h3>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-emerald-500/30 transition duration-300"
+      >
+        <img
+          src="projects_pic8.png"
+          alt="Project 8"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-emerald-400">Project 8</h3>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-emerald-500/30 transition duration-300"
+      >
+        <img
+          src="projects_pic9.png"
+          alt="Project 9"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-emerald-400">Project 9</h3>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

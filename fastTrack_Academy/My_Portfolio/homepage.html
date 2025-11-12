@@ -1,52 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homepage.html</title>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yahye Hashi | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-900 text-gray-100">
-    <style> 
-    body {
-        background-color: rgb(31, 209, 212);
-    }
-    h1 {
-        font-size: 65px;
-        font-family: Calibri, 'Trebuchet MS', sans-serif;
-        color: rgb(9, 194, 31);
-    }
-    h2 {
-        font-size: 50px;
-        font-family: Calibri, 'Trebuchet MS', sans-serif;
-        color: rgb(9, 194, 31);
-    }
-    h3 {
-        font-size: 39px;
-        font-family: Calibri, 'Trebuchet MS', sans-serif;
-        color: rgb(248, 245, 245);
-    }
-   </style>
- <section class="max-w mx-auto px-6 py-16 grid grid-cols-5 gap-9">
+  </head>
 
-    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
-      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center "><a href="homepage.html" target="_blank">Homepage</a></h2>
-    </div>
-<div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
-      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="about.html" target="_blank">About</a></h2>
-    </div>
-    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
-      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="contact.html" target="_blank">Contact Me</a></h2>
-    </div>
-    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
-      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="projects.html" target="_blank">My Projects</a></h2>
-    </div>
-    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
-      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="videos.html" target="_blank">Videos</a></h2>
-    </div>
-</section>
-<h1 class="m-4 font-bold">My name is Yahye Hashi</h1>
-<h2 class="m-4 font-bold">Welcome to my portfolio</h2><br>
-<h3 class="m-4 font-semi-bold">I am 26 years old and have been learning HTML,Css,Javascript and Tailwind these past 2 months.</h3> 
-</body>
+  <body class="bg-gray-950 text-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav
+      class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 sticky top-0 bg-gray-950/80 backdrop-blur-md z-50"
+    >
+      <a
+        href="homepage.html"
+        target="_blank"
+        class="bg-green-700 rounded-full shadow-lg p-4 text-center text-lg font-semibold text-white hover:bg-green-600 transition-all duration-300"
+      >
+        Homepage
+      </a>
+
+      <a
+        href="about.html"
+        target="_blank"
+        class="bg-gray-800 rounded-full shadow-lg p-4 text-center text-lg font-semibold text-green-400 hover:bg-green-700 hover:text-white transition-all duration-300"
+      >
+        About
+      </a>
+
+      <a
+        href="contact.html"
+        target="_blank"
+        class="bg-gray-800 rounded-full shadow-lg p-4 text-center text-lg font-semibold text-green-400 hover:bg-green-700 hover:text-white transition-all duration-300"
+      >
+        Contact
+      </a>
+
+      <a
+        href="projects.html"
+        target="_blank"
+        class="bg-gray-800 rounded-full shadow-lg p-4 text-center text-lg font-semibold text-green-400 hover:bg-green-700 hover:text-white transition-all duration-300"
+      >
+        Projects
+      </a>
+
+      <a
+        href="videos.html"
+        target="_blank"
+        class="bg-gray-800 rounded-full shadow-lg p-4 text-center text-lg font-semibold text-green-400 hover:bg-green-700 hover:text-white transition-all duration-300"
+      >
+        Videos
+      </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="text-center py-24 px-6 bg-gradient-to-b from-gray-900 via-gray-950 to-black rounded-b-[3rem] shadow-inner"
+    >
+      <h1
+        class="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-green-400 to-emerald-600 bg-clip-text text-transparent mb-4"
+      >
+        Welcome to My Portfolio
+      </h1>
+      <p class="text-xl text-gray-300 mb-8">
+        Hi, I’m <span class="text-green-400 font-semibold">Yahye Hashi</span> —
+        an aspiring Full Stack Developer.
+      </p>
+
+      <p class="max-w-2xl mx-auto text-gray-400 text-lg leading-relaxed">
+        I'm 26 years old and have been learning
+        <span class="text-green-300 font-semibold">HTML</span>,
+        <span class="text-green-300 font-semibold">CSS</span>,
+        <span class="text-green-300 font-semibold">JavaScript</span>, and
+        <span class="text-green-300 font-semibold">Tailwind CSS</span>
+        over the past two months. My goal is to build beautiful, functional
+        websites and applications.
+      </p>
+
+      <div class="mt-10">
+        <a
+          href="projects.html"
+          target="_blank"
+          class="inline-block bg-green-600 text-white font-semibold text-lg px-8 py-3 rounded-full shadow-lg hover:bg-green-700 hover:scale-105 transition-transform duration-300"
+        >
+          View My Projects
+        </a>
+      </div>
+    </header>
+
+    <!-- Highlights Section -->
+    <section
+      class="max-w-5xl mx-auto py-20 px-6 grid md:grid-cols-3 gap-10 text-center"
+    >
+      <div
+        class="bg-gray-800 rounded-3xl p-8 shadow-lg hover:shadow-green-600/30 transition duration-300"
+      >
+        <h3 class="text-2xl font-semibold mb-3 text-green-400">
+          Frontend Skills
+        </h3>
+        <p class="text-gray-400">
+          Strong foundation in HTML, CSS, JavaScript, and Tailwind CSS for
+          building modern, responsive UIs.
+        </p>
+      </div>
+
+      <div
+        class="bg-gray-800 rounded-3xl p-8 shadow-lg hover:shadow-green-600/30 transition duration-300"
+      >
+        <h3 class="text-2xl font-semibold mb-3 text-green-400">
+          Learning Path
+        </h3>
+        <p class="text-gray-400">
+          Currently expanding into SQL, TypeScript, Python, and React to become
+          a full-stack developer.
+        </p>
+      </div>
+
+      <div
+        class="bg-gray-800 rounded-3xl p-8 shadow-lg hover:shadow-green-600/30 transition duration-300"
+      >
+        <h3 class="text-2xl font-semibold mb-3 text-green-400">My Goal</h3>
+        <p class="text-gray-400">
+          To create impactful digital experiences and contribute to real-world
+          projects in tech.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="mt-16 py-6 text-center text-gray-500 border-t border-gray-800"
+    >
+      <p>© 2025 Yahye Hashi. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

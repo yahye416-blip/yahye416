@@ -1,80 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>videos.html</title>
-     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-900 text-gray-100">
-    <style> 
-   
-    body {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    h1 {
-        font-size: 50px;
-        font-family: Calibri, 'Trebuchet MS', sans-serif;
-        color: rgb(11, 151, 159);
-    }
-    h2 {
-font-size: 65px;
-    
-    }
-   </style>
- <section class="max-w mx-auto px-6 py-16 grid grid-cols-5 gap-9">
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Videos | Yahye Hashi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
-      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center "><a href="homepage.html" target="_blank">Homepage</a></h2>
-    </div>
-<div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
-      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="about.html" target="_blank">About</a></h2>
-    </div>
-    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
-      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="contact.html" target="_blank">Contact Me</a></h2>
-    </div>
-    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
-      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="projects.html" target="_blank">My Projects</a></h2>
-    </div>
-    <div class="bg-gray-800 rounded-full shadow-lg p-6 hover:shadow-green-700/40 transition">
-      <h2 class="text-xl font-semibold mb-2 text-green-400 text-center"><a href="videos.html" target="_blank">Videos</a></h2>
-    </div>
-</section>
-<div class="m-3 p-2">
-<h2 class="bg-gray-800 text-green-700 font-bold rounded-3xl p-6 hover:shadow-green-700/40 transition">My Videos</h2>
-    </div>
-    <br>
-    <ol>    
-    <li class="m-4">
-        <video width="640" height="500" controls autoplay>
-            <source src="videos.html_vid1.mp4" type="video/mp4">
-            <source src="videos.html_vid1.mov" type="video/mov">
+  <body class="bg-gray-950 text-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav
+      class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 sticky top-0 bg-gray-950/80 backdrop-blur-md z-50"
+    >
+      <a
+        href="homepage.html"
+        target="_blank"
+        class="bg-gray-800 rounded-full shadow-lg p-4 text-center text-lg font-semibold text-green-400 hover:bg-green-700 hover:text-white transition-all duration-300"
+      >
+        Homepage
+      </a>
+
+      <a
+        href="about.html"
+        target="_blank"
+        class="bg-gray-800 rounded-full shadow-lg p-4 text-center text-lg font-semibold text-green-400 hover:bg-green-700 hover:text-white transition-all duration-300"
+      >
+        About
+      </a>
+
+      <a
+        href="contact.html"
+        target="_blank"
+        class="bg-gray-800 rounded-full shadow-lg p-4 text-center text-lg font-semibold text-green-400 hover:bg-green-700 hover:text-white transition-all duration-300"
+      >
+        Contact
+      </a>
+
+      <a
+        href="projects.html"
+        target="_blank"
+        class="bg-gray-800 rounded-full shadow-lg p-4 text-center text-lg font-semibold text-green-400 hover:bg-green-700 hover:text-white transition-all duration-300"
+      >
+        Projects
+      </a>
+
+      <a
+        href="videos.html"
+        target="_blank"
+        class="bg-green-700 rounded-full shadow-lg p-4 text-center text-lg font-semibold text-white hover:bg-green-600 transition-all duration-300"
+      >
+        Videos
+      </a>
+    </nav>
+
+    <!-- Header -->
+    <header
+      class="max-w-4xl mx-auto bg-gradient-to-r from-green-900 to-gray-800 py-16 text-center rounded-3xl shadow-lg mt-8"
+    >
+      <h1
+        class="text-5xl font-extrabold bg-gradient-to-r from-green-400 to-emerald-600 bg-clip-text text-transparent mb-3"
+      >
+        My Videos
+      </h1>
+      <p class="text-gray-300 text-lg">
+        A showcase of my personal and creative video projects
+      </p>
+    </header>
+
+    <!-- Video Gallery -->
+    <section
+      class="max-w-6xl mx-auto px-6 py-16 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+    >
+      <!-- Video Card -->
+      <div
+        class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-green-600/30 transition duration-300"
+      >
+        <video controls poster="poster1.jpg" class="w-full h-64 object-cover">
+          <source src="videos.html_vid1.mp4" type="video/mp4" />
+          <source src="videos.html_vid1.mov" type="video/mov" />
+          Your browser does not support the video tag.
         </video>
-    </li>
-    <li class="m-4">
-        <video width="640" height="500" controls autoplay>
-            <source src="videos.html_vid2.mp4" type="video/mp4">
-            <source src="videos.html_vid2.mov" type="video/mov">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-green-400">Video 1</h3>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-green-600/30 transition duration-300"
+      >
+        <video controls poster="poster2.jpg" class="w-full h-64 object-cover">
+          <source src="videos.html_vid2.mp4" type="video/mp4" />
+          <source src="videos.html_vid2.mov" type="video/mov" />
         </video>
-    </li>
-    <li class="m-4">
-    <video width="640" height="500" controls autoplay>
-            <source src="videos.html_vid3.mp4" type="video/mp4">
-            <source src="videos.html_vid3.mov" type="video/mov">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-green-400">Video 2</h3>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-green-600/30 transition duration-300"
+      >
+        <video controls poster="poster3.jpg" class="w-full h-64 object-cover">
+          <source src="videos.html_vid3.mp4" type="video/mp4" />
+          <source src="videos.html_vid3.mov" type="video/mov" />
         </video>
-    </li>
-     <li class="m-4">
-         <video width="640" height="500" controls autoplay>
-            <source src="videos.html_vid4.mp4" type="video/mp4">
-            <source src="videos.html_vid4.mov" type="video/mov">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-green-400">Video 3</h3>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-green-600/30 transition duration-300"
+      >
+        <video controls poster="poster4.jpg" class="w-full h-64 object-cover">
+          <source src="videos.html_vid4.mp4" type="video/mp4" />
+          <source src="videos.html_vid4.mov" type="video/mov" />
         </video>
-    </li>
-     <li class="m-4">
-        <video width="640" height="500" controls autoplay>
-            <source src="videos.html_vid5.mp4" type="video/mp4">
-            <source src="videos.html_vid5.mov" type="video/mov">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-green-400">Video 4</h3>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-green-600/30 transition duration-300"
+      >
+        <video controls poster="poster5.jpg" class="w-full h-64 object-cover">
+          <source src="videos.html_vid5.mp4" type="video/mp4" />
+          <source src="videos.html_vid5.mov" type="video/mov" />
         </video>
-    </li>
-    </ol>
-</body>
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-green-400">Video 5</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="mt-16 py-6 text-center text-gray-500 border-t border-gray-800"
+    >
+      <p>© 2025 Yahye Hashi. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
