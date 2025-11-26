@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Linking Example</title>
+  </head>
+
+  <body>
+    <h1>JavaScript Events (Linked Externally)</h1>
+
+    <button id="salaamBtn">Click Me</button><br /><br />
+
+    <input id="textInput" type="text" placeholder="Type something..." />
+
+    <script>
+      // Link events using JavaScript
+
+      // 1️⃣ Click event
+      const button = document.getElementById("salaamBtn");
+      button.addEventListener("click", function () {
+        alert("Asalaam aleykum Yahye");
+      });
+
+      // 2️⃣ Keypress event
+      const input = document.getElementById("textInput");
+      input.addEventListener("keydown", function (event) {
+        alert("You pressed: " + event.key);
+      });
+    </script>
+  </body>
+</html>

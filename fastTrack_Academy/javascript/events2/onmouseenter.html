@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>javaScript events</h1>
+    <div
+      onmouseenter="makeTheBoxYellow()"
+      onmouseleave="makeTheBoxBlue()"
+      id="theBox"
+      style="background-color: blue; height: 200px; width: 200px"
+    ></div>
+    <script>
+      function makeTheBoxYellow() {
+        let box = document.getElementById("theBox");
+        box.style.backgroundColor = "yellow";
+      }
+      function makeTheBoxBlue() {
+        let box = document.getElementById("theBox");
+        box.style.backgroundColor = "blue";
+      }
+    </script>
+  </body>
+</html>
